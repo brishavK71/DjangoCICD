@@ -13,7 +13,7 @@ cd /home/ec2-user/django-aws_cicd/
 python3 -m venv venv source venv/bin/activate
 
 # install requirements.txt
-pip install -r /home/ubuntu/django-aws_cicd/requirements.txt
+pip install -r /home/ec2-user/django-aws_cicd/requirements.txt
 pip install django
 
 # run server
