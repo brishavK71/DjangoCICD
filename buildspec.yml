@@ -13,6 +13,7 @@ phases:
     commands:
       - echo "Installing project dependencies"
       - pip install -r requirements.txt
+      - pip install django
       - python manage.py collectstatic --noinput
 
   build:
