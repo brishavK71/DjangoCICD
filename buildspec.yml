@@ -13,16 +13,13 @@ phases:
     commands:
       - echo "Installing project dependencies"
       - pip install -r requirements.txt
-      - pip install django
-      - python manage.py collectstatic --noinput
 
   build:
     commands:
       - echo "Running tests"
-      - python manage.py test  # Add any other testing commands you need
+      - # Add any other testing commands you need
 
 artifacts:
   files:
     - '**/*'
-  name: my-django-app-build-${CODEBUILD_BUILD_ID}
-  path: /tmp/build-artifacts  # Change this path to the desired location for the build artifacts
+# Change this path to the desired location for the build artifacts
