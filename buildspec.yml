@@ -19,7 +19,9 @@ phases:
       - sudo yum groupinstall -y "Development Tools"
 
       - sudo yum install -y python3-devel
+
       - sudo yum install -y gcc
+      - pip install --upgrade setuptools wheel
 
       - pip install backports.zoneinfo
 
