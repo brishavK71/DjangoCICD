@@ -17,6 +17,10 @@ phases:
   pre_build:
     commands:
       - echo Prebuild ops
+      - yum update
+      - yum groupinstall "Development Tools"
+      - yum install python3-devel
+      - yum install gcc
       - pip3 install -r requirements.txt
   build:
     commands:
