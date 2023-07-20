@@ -21,7 +21,7 @@ phases:
       - sudo yum groupinstall -y "Development Tools"
       - sudo yum install -y python3-devel
       - sudo yum install -y gcc
-      - sudo pip3 install -r requirements.txt
+      - pip3 install -r requirements.txt
   build:
     commands:
       - echo Building the application 
