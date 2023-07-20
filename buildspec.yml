@@ -1,7 +1,5 @@
-version: 0.2
-install:
-    runtime-versions:
-      python: 3.9
+version: 0.1
+
 # environment_variables:
   # plaintext:
   #   DJANGO_SETTINGS_MODULE: config.settings.test
@@ -17,10 +15,6 @@ phases:
   pre_build:
     commands:
       - echo Prebuild ops
-      - sudo yum update
-      - sudo yum groupinstall -y "Development Tools"
-      - sudo yum install -y python3-devel
-      - sudo yum install -y gcc
       - pip3 install -r requirements.txt
   build:
     commands:
