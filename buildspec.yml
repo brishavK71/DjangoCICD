@@ -15,6 +15,14 @@ phases:
   pre_build:
     commands:
       - echo Prebuild ops
+      - sudo yum update
+      - sudo yum groupinstall -y "Development Tools"
+
+      - sudo yum install -y python3-devel
+      - sudo yum install -y gcc
+
+      - pip install backports.zoneinfo
+
       - pip3 install -r requirements.txt
   build:
     commands:
