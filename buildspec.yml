@@ -22,6 +22,5 @@ phases:
 artifacts:
   files:
     - '**/*'
-  name: my-django-app-build-${CODEBUILD_BUILD_ID}
-  path: /tmp/build-artifacts  # Change this path to the desired location for the build artifacts
+# Change this path to the desired location for the build artifacts
 # Change this path to the desired location for the build artifacts
