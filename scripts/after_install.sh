@@ -18,4 +18,4 @@ pip install -r /home/ec2-user/django-aws_cicd/requirements.txt
 
 
 # run server
-screen -d -m python3 runserver 0:8000
+screen -d -m python3 manage.py runserver 0:8000
